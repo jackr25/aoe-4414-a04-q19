@@ -83,7 +83,6 @@ def JD_to_GMSTang(JDfrac):
 # Perform rotations on eci_vec
 def Rz_Theta(theta, ecef_vec):
   Rz = [ [ cos(-theta), sin(-theta),0 ], [-sin(-theta), cos(-theta), 0 ], [0,0,1] ]
-  print(Rz)
   ans = npl.matrix_mult(Rz,ecef_vec)
   return ans
     
